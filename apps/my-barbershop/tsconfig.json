@@ -10,7 +10,13 @@
     "moduleResolution": "bundler",
     "isolatedModules": true,
     "emitDecoratorMetadata": false,
-    "module": "preserve"
+    "module": "preserve",
+    "paths": {
+      "@shared/*": ["apps/my-barbershop/src/app/shared/*"],
+      "@domain/*": ["apps/my-barbershop/src/app/domain/*"],
+      "@core/*": ["apps/my-barbershop/src/app/core/*"],
+      "@widgets/*": ["apps/my-barbershop/src/app/widgets/*"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
